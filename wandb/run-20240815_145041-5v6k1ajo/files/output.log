@@ -1,0 +1,273 @@
+Use pretrained weights
+load word embedding
+train len 1
+val len 1
+Writing Tensorboard logs to  out/1p_train
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=0: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.65817): 100%|██████████| 1/1 [00:18<00:00, 18.77s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+['20_pedbrain/1p_train/labels/BraTS-PED-00002-000'] torch.Size([1, 1, 160, 160, 104])
+
+100%|██████████| 1/1 [00:06<00:00,  6.31s/it]
+
+Epoch=1: Training (0 / 1 Steps) (dice_loss=0.99636, bce_loss=0.65353): 100%|██████████| 1/1 [00:05<00:00,  5.56s/it]
+Epoch=1: Training (0 / 1 Steps) (dice_loss=0.99636, bce_loss=0.65353): 100%|██████████| 1/1 [00:05<00:00,  5.97s/it]
+
+Epoch=2: Training (0 / 1 Steps) (dice_loss=0.99623, bce_loss=0.64889): 100%|██████████| 1/1 [00:05<00:00,  5.56s/it]
+Epoch=2: Training (0 / 1 Steps) (dice_loss=0.99623, bce_loss=0.64889): 100%|██████████| 1/1 [00:05<00:00,  5.96s/it]
+
+Epoch=3: Training (0 / 1 Steps) (dice_loss=0.99765, bce_loss=0.64256): 100%|██████████| 1/1 [00:05<00:00,  5.19s/it]
+Epoch=3: Training (0 / 1 Steps) (dice_loss=0.99765, bce_loss=0.64256): 100%|██████████| 1/1 [00:05<00:00,  5.67s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=4: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.64100): 100%|██████████| 1/1 [00:06<00:00,  6.94s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=5: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.63195): 100%|██████████| 1/1 [00:05<00:00,  5.97s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=6: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.62630): 100%|██████████| 1/1 [00:06<00:00,  6.44s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=7: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.61965): 100%|██████████| 1/1 [00:05<00:00,  5.38s/it]
+
+Epoch=8: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.60518): 100%|██████████| 1/1 [00:05<00:00,  5.10s/it]
+Epoch=8: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.60518): 100%|██████████| 1/1 [00:05<00:00,  5.57s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=9: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.59501): 100%|██████████| 1/1 [00:05<00:00,  5.38s/it]
+
+Epoch=10: Training (0 / 1 Steps) (dice_loss=0.99711, bce_loss=0.54469): 100%|██████████| 1/1 [00:06<00:00,  6.10s/it]
+Epoch=10: Training (0 / 1 Steps) (dice_loss=0.99711, bce_loss=0.54469): 100%|██████████| 1/1 [00:06<00:00,  6.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+['20_pedbrain/1p_train/labels/BraTS-PED-00002-000'] torch.Size([1, 1, 160, 160, 104])
+100%|██████████| 1/1 [00:05<00:00,  5.24s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=11: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.56468): 100%|██████████| 1/1 [00:05<00:00,  5.72s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=12: Training (0 / 1 Steps) (dice_loss=0.99636, bce_loss=0.52432): 100%|██████████| 1/1 [00:05<00:00,  5.95s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=13: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.54144): 100%|██████████| 1/1 [00:06<00:00,  6.30s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=14: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.51348): 100%|██████████| 1/1 [00:05<00:00,  5.42s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=15: Training (0 / 1 Steps) (dice_loss=0.99765, bce_loss=0.45104): 100%|██████████| 1/1 [00:06<00:00,  6.06s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=16: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.45121): 100%|██████████| 1/1 [00:06<00:00,  6.39s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=17: Training (0 / 1 Steps) (dice_loss=0.99609, bce_loss=0.46557): 100%|██████████| 1/1 [00:06<00:00,  6.13s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=18: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.40167): 100%|██████████| 1/1 [00:05<00:00,  5.08s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=19: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.39405): 100%|██████████| 1/1 [00:05<00:00,  5.64s/it]
+
+Epoch=20: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.43315): 100%|██████████| 1/1 [00:05<00:00,  5.17s/it]
+Epoch=20: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.43315): 100%|██████████| 1/1 [00:05<00:00,  5.63s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+['20_pedbrain/1p_train/labels/BraTS-PED-00002-000'] torch.Size([1, 1, 160, 160, 104])
+100%|██████████| 1/1 [00:06<00:00,  6.33s/it]
+
+Epoch=21: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.39679): 100%|██████████| 1/1 [00:05<00:00,  5.35s/it]
+Epoch=21: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.39679): 100%|██████████| 1/1 [00:05<00:00,  5.78s/it]
+
+Epoch=22: Training (0 / 1 Steps) (dice_loss=0.99766, bce_loss=0.31668): 100%|██████████| 1/1 [00:05<00:00,  5.50s/it]
+Epoch=22: Training (0 / 1 Steps) (dice_loss=0.99766, bce_loss=0.31668): 100%|██████████| 1/1 [00:05<00:00,  5.63s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=23: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.38735): 100%|██████████| 1/1 [00:03<00:00,  3.34s/it]
+
+Epoch=24: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.37020): 100%|██████████| 1/1 [00:06<00:00,  6.46s/it]
+Epoch=24: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.37020): 100%|██████████| 1/1 [00:06<00:00,  6.88s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=25: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.34505): 100%|██████████| 1/1 [00:05<00:00,  5.54s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=26: Training (0 / 1 Steps) (dice_loss=0.99766, bce_loss=0.26512): 100%|██████████| 1/1 [00:05<00:00,  5.93s/it]
+Epoch=27: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.29672): 100%|██████████| 1/1 [00:06<00:00,  6.13s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=27: ave_dice_loss=0.99610, ave_bce_loss=0.29672
+Epoch=28: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.28923): 100%|██████████| 1/1 [00:07<00:00,  7.44s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=29: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.26414): 100%|██████████| 1/1 [00:06<00:00,  6.23s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=30: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.24709): 100%|██████████| 1/1 [00:05<00:00,  5.88s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+['20_pedbrain/1p_train/labels/BraTS-PED-00002-000'] torch.Size([1, 1, 160, 160, 104])
+100%|██████████| 1/1 [00:05<00:00,  5.37s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=31: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.23608): 100%|██████████| 1/1 [00:06<00:00,  6.47s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=32: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.21775): 100%|██████████| 1/1 [00:05<00:00,  5.93s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=33: Training (0 / 1 Steps) (dice_loss=0.99653, bce_loss=0.19820): 100%|██████████| 1/1 [00:05<00:00,  5.93s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=34: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.19714): 100%|██████████| 1/1 [00:06<00:00,  6.09s/it]
+
+Epoch=35: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.17499): 100%|██████████| 1/1 [00:04<00:00,  4.13s/it]
+Epoch=35: Training (0 / 1 Steps) (dice_loss=0.99610, bce_loss=0.17499): 100%|██████████| 1/1 [00:04<00:00,  4.52s/it]
+
+Epoch=36: Training (0 / 1 Steps) (dice_loss=0.99618, bce_loss=0.16354): 100%|██████████| 1/1 [00:05<00:00,  5.53s/it]
+Epoch=36: Training (0 / 1 Steps) (dice_loss=0.99618, bce_loss=0.16354): 100%|██████████| 1/1 [00:06<00:00,  6.01s/it]
+
+Epoch=37: Training (0 / 1 Steps) (dice_loss=0.99608, bce_loss=0.15412): 100%|██████████| 1/1 [00:05<00:00,  5.68s/it]
+Epoch=37: Training (0 / 1 Steps) (dice_loss=0.99608, bce_loss=0.15412): 100%|██████████| 1/1 [00:06<00:00,  6.06s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=38: Training (0 / 1 Steps) (dice_loss=0.99612, bce_loss=0.14685): 100%|██████████| 1/1 [00:06<00:00,  6.46s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=39: Training (0 / 1 Steps) (dice_loss=0.99607, bce_loss=0.12631): 100%|██████████| 1/1 [00:06<00:00,  6.06s/it]
+
+Epoch=40: Training (0 / 1 Steps) (dice_loss=0.99607, bce_loss=0.12789): 100%|██████████| 1/1 [00:05<00:00,  5.09s/it]
+Epoch=40: Training (0 / 1 Steps) (dice_loss=0.99607, bce_loss=0.12789): 100%|██████████| 1/1 [00:05<00:00,  5.61s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+['20_pedbrain/1p_train/labels/BraTS-PED-00002-000'] torch.Size([1, 1, 160, 160, 104])
+100%|██████████| 1/1 [00:05<00:00,  5.17s/it]
+
+Epoch=41: Training (0 / 1 Steps) (dice_loss=0.99621, bce_loss=0.11068): 100%|██████████| 1/1 [00:06<00:00,  6.34s/it]
+Epoch=41: Training (0 / 1 Steps) (dice_loss=0.99621, bce_loss=0.11068): 100%|██████████| 1/1 [00:06<00:00,  6.72s/it]
+
+Epoch=42: Training (0 / 1 Steps) (dice_loss=0.99599, bce_loss=0.09114): 100%|██████████| 1/1 [00:05<00:00,  5.29s/it]
+Epoch=42: Training (0 / 1 Steps) (dice_loss=0.99599, bce_loss=0.09114): 100%|██████████| 1/1 [00:05<00:00,  5.76s/it]
+Epoch=43: Training (0 / 1 Steps) (dice_loss=0.99589, bce_loss=0.08405): 100%|██████████| 1/1 [00:05<00:00,  5.78s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=44: Training (0 / 1 Steps) (dice_loss=0.99589, bce_loss=0.07042): 100%|██████████| 1/1 [00:05<00:00,  5.93s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=44: ave_dice_loss=0.99589, ave_bce_loss=0.07042
+Epoch=45: Training (0 / 1 Steps) (dice_loss=0.99664, bce_loss=0.07696): 100%|██████████| 1/1 [00:07<00:00,  7.13s/it]
+
+Epoch=46: Training (0 / 1 Steps) (dice_loss=0.99833, bce_loss=0.07859): 100%|██████████| 1/1 [00:07<00:00,  7.00s/it]
+Epoch=46: Training (0 / 1 Steps) (dice_loss=0.99833, bce_loss=0.07859): 100%|██████████| 1/1 [00:07<00:00,  7.38s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=47: Training (0 / 1 Steps) (dice_loss=0.99557, bce_loss=0.04222): 100%|██████████| 1/1 [00:03<00:00,  3.19s/it]
+
+Epoch=48: Training (0 / 1 Steps) (dice_loss=0.99533, bce_loss=0.03630): 100%|██████████| 1/1 [00:06<00:00,  6.00s/it]
+Epoch=48: Training (0 / 1 Steps) (dice_loss=0.99533, bce_loss=0.03630): 100%|██████████| 1/1 [00:06<00:00,  6.53s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=49: Training (0 / 1 Steps) (dice_loss=0.99808, bce_loss=0.04583): 100%|██████████| 1/1 [00:07<00:00,  7.03s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=50: Training (0 / 1 Steps) (dice_loss=0.99572, bce_loss=0.02649): 100%|██████████| 1/1 [00:05<00:00,  5.93s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+['20_pedbrain/1p_train/labels/BraTS-PED-00002-000'] torch.Size([1, 1, 160, 160, 104])
+Task20| NC Brain: 0.0000, ED Brain: 0.0000, ET Brain: 0.0000,
+100%|██████████| 1/1 [00:05<00:00,  5.56s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=51: Training (0 / 1 Steps) (dice_loss=0.99710, bce_loss=0.03831): 100%|██████████| 1/1 [00:06<00:00,  6.03s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=52: Training (0 / 1 Steps) (dice_loss=0.99389, bce_loss=0.01726): 100%|██████████| 1/1 [00:07<00:00,  7.31s/it]
+
+Epoch=53: Training (0 / 1 Steps) (dice_loss=0.99293, bce_loss=0.01480): 100%|██████████| 1/1 [00:05<00:00,  5.09s/it]
+Epoch=53: Training (0 / 1 Steps) (dice_loss=0.99293, bce_loss=0.01480): 100%|██████████| 1/1 [00:05<00:00,  5.47s/it]
+Epoch=54: Training (0 / 1 Steps) (dice_loss=0.99197, bce_loss=0.01313): 100%|██████████| 1/1 [00:05<00:00,  5.80s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+
+Epoch=55: Training (0 / 1 Steps) (dice_loss=0.99043, bce_loss=0.01185): 100%|██████████| 1/1 [00:05<00:00,  5.63s/it]
+Epoch=55: Training (0 / 1 Steps) (dice_loss=0.99043, bce_loss=0.01185): 100%|██████████| 1/1 [00:06<00:00,  6.09s/it]
+
+Epoch=56: Training (0 / 1 Steps) (dice_loss=0.98710, bce_loss=0.01083): 100%|██████████| 1/1 [00:05<00:00,  5.73s/it]
+Epoch=56: Training (0 / 1 Steps) (dice_loss=0.98710, bce_loss=0.01083): 100%|██████████| 1/1 [00:06<00:00,  6.07s/it]
+Epoch=57: Training (0 / 1 Steps) (dice_loss=0.99291, bce_loss=0.01220): 100%|██████████| 1/1 [00:05<00:00,  5.62s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=57: ave_dice_loss=0.99291, ave_bce_loss=0.01220
+Epoch=58: Training (0 / 1 Steps) (dice_loss=0.97773, bce_loss=0.00862): 100%|██████████| 1/1 [00:05<00:00,  5.91s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=59: Training (0 / 1 Steps) (dice_loss=0.98257, bce_loss=0.00612): 100%|██████████| 1/1 [00:04<00:00,  4.65s/it]
+
+Epoch=60: Training (0 / 1 Steps) (dice_loss=0.97354, bce_loss=0.00858): 100%|██████████| 1/1 [00:05<00:00,  5.51s/it]
+Epoch=60: Training (0 / 1 Steps) (dice_loss=0.97354, bce_loss=0.00858): 100%|██████████| 1/1 [00:05<00:00,  5.89s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+
+100%|██████████| 1/1 [00:05<00:00,  5.50s/it]
+100%|██████████| 1/1 [00:05<00:00,  5.74s/it]
+
+Epoch=61: Training (0 / 1 Steps) (dice_loss=0.97261, bce_loss=0.00829): 100%|██████████| 1/1 [00:05<00:00,  5.67s/it]
+Epoch=61: Training (0 / 1 Steps) (dice_loss=0.97261, bce_loss=0.00829): 100%|██████████| 1/1 [00:06<00:00,  6.23s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=62: Training (0 / 1 Steps) (dice_loss=0.96737, bce_loss=0.00807): 100%|██████████| 1/1 [00:06<00:00,  6.44s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=63: Training (0 / 1 Steps) (dice_loss=0.95288, bce_loss=0.00704): 100%|██████████| 1/1 [00:06<00:00,  6.19s/it]
+
+Epoch=64: Training (0 / 1 Steps) (dice_loss=0.97711, bce_loss=0.01140): 100%|██████████| 1/1 [00:04<00:00,  4.82s/it]
+Epoch=64: Training (0 / 1 Steps) (dice_loss=0.97711, bce_loss=0.01140): 100%|██████████| 1/1 [00:05<00:00,  5.23s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=65: Training (0 / 1 Steps) (dice_loss=0.95815, bce_loss=0.00992): 100%|██████████| 1/1 [00:06<00:00,  6.83s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=66: Training (0 / 1 Steps) (dice_loss=0.94213, bce_loss=0.00794): 100%|██████████| 1/1 [00:05<00:00,  5.81s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=67: Training (0 / 1 Steps) (dice_loss=0.92287, bce_loss=0.00739): 100%|██████████| 1/1 [00:06<00:00,  6.60s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=68: Training (0 / 1 Steps) (dice_loss=0.84972, bce_loss=0.00506): 100%|██████████| 1/1 [00:05<00:00,  5.13s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=69: Training (0 / 1 Steps) (dice_loss=0.82832, bce_loss=0.00737): 100%|██████████| 1/1 [00:06<00:00,  6.12s/it]
+Epoch=70: Training (0 / 1 Steps) (dice_loss=0.93406, bce_loss=0.00796): 100%|██████████| 1/1 [00:06<00:00,  6.90s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=70: ave_dice_loss=0.93406, ave_bce_loss=0.00796
+['20_pedbrain/1p_train/labels/BraTS-PED-00002-000'] torch.Size([1, 1, 160, 160, 104])
+100%|██████████| 1/1 [00:04<00:00,  4.68s/it]
+
+Epoch=71: Training (0 / 1 Steps) (dice_loss=0.74968, bce_loss=0.01593): 100%|██████████| 1/1 [00:05<00:00,  5.48s/it]
+Epoch=71: Training (0 / 1 Steps) (dice_loss=0.74968, bce_loss=0.01593): 100%|██████████| 1/1 [00:05<00:00,  5.90s/it]
+
+Epoch=72: Training (0 / 1 Steps) (dice_loss=0.74346, bce_loss=0.01729): 100%|██████████| 1/1 [00:05<00:00,  5.18s/it]
+Epoch=72: Training (0 / 1 Steps) (dice_loss=0.74346, bce_loss=0.01729): 100%|██████████| 1/1 [00:05<00:00,  5.70s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=73: Training (0 / 1 Steps) (dice_loss=0.65882, bce_loss=0.01279): 100%|██████████| 1/1 [00:07<00:00,  7.47s/it]
+
+Epoch=74: Training (0 / 1 Steps) (dice_loss=0.72516, bce_loss=0.01595): 100%|██████████| 1/1 [00:05<00:00,  5.88s/it]
+Epoch=74: Training (0 / 1 Steps) (dice_loss=0.72516, bce_loss=0.01595): 100%|██████████| 1/1 [00:06<00:00,  6.42s/it]
+
+Epoch=75: Training (0 / 1 Steps) (dice_loss=0.68286, bce_loss=0.01384): 100%|██████████| 1/1 [00:05<00:00,  5.49s/it]
+Epoch=75: Training (0 / 1 Steps) (dice_loss=0.68286, bce_loss=0.01384): 100%|██████████| 1/1 [00:05<00:00,  5.96s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=76: Training (0 / 1 Steps) (dice_loss=0.82810, bce_loss=0.01109): 100%|██████████| 1/1 [00:07<00:00,  7.34s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=77: Training (0 / 1 Steps) (dice_loss=0.65661, bce_loss=0.01854): 100%|██████████| 1/1 [00:05<00:00,  5.70s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=78: Training (0 / 1 Steps) (dice_loss=0.64157, bce_loss=0.01652): 100%|██████████| 1/1 [00:06<00:00,  6.36s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=79: Training (0 / 1 Steps) (dice_loss=0.63844, bce_loss=0.01671): 100%|██████████| 1/1 [00:05<00:00,  5.89s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+
+Epoch=80: Training (0 / 1 Steps) (dice_loss=0.64250, bce_loss=0.01408): 100%|██████████| 1/1 [00:06<00:00,  6.14s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+['20_pedbrain/1p_train/labels/BraTS-PED-00002-000'] torch.Size([1, 1, 160, 160, 104])
+100%|██████████| 1/1 [00:05<00:00,  5.49s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+
+Epoch=81: Training (0 / 1 Steps) (dice_loss=0.63667, bce_loss=0.01395): 100%|██████████| 1/1 [00:06<00:00,  6.50s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+
+Epoch=82: Training (0 / 1 Steps) (dice_loss=0.63745, bce_loss=0.01494): 100%|██████████| 1/1 [00:03<00:00,  3.81s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+
+Epoch=83: Training (0 / 1 Steps) (dice_loss=0.62298, bce_loss=0.01372): 100%|██████████| 1/1 [00:06<00:00,  6.18s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=84: Training (0 / 1 Steps) (dice_loss=0.64813, bce_loss=0.01123): 100%|██████████| 1/1 [00:06<00:00,  6.21s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=85: Training (0 / 1 Steps) (dice_loss=0.62318, bce_loss=0.00843): 100%|██████████| 1/1 [00:06<00:00,  6.16s/it]
+
+Epoch=86: Training (0 / 1 Steps) (dice_loss=0.62599, bce_loss=0.00704): 100%|██████████| 1/1 [00:05<00:00,  5.31s/it]
+Epoch=86: Training (0 / 1 Steps) (dice_loss=0.62599, bce_loss=0.00704): 100%|██████████| 1/1 [00:05<00:00,  5.74s/it]
+
+Epoch=87: Training (0 / 1 Steps) (dice_loss=0.60694, bce_loss=0.01052): 100%|██████████| 1/1 [00:05<00:00,  5.57s/it]
+Epoch=87: Training (0 / 1 Steps) (dice_loss=0.60694, bce_loss=0.01052): 100%|██████████| 1/1 [00:05<00:00,  5.99s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=88: Training (0 / 1 Steps) (dice_loss=0.99650, bce_loss=0.01851): 100%|██████████| 1/1 [00:06<00:00,  6.57s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=89: Training (0 / 1 Steps) (dice_loss=0.63211, bce_loss=0.00807): 100%|██████████| 1/1 [00:06<00:00,  6.70s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=90: Training (0 / 1 Steps) (dice_loss=0.59941, bce_loss=0.01893): 100%|██████████| 1/1 [00:06<00:00,  6.11s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+['20_pedbrain/1p_train/labels/BraTS-PED-00002-000'] torch.Size([1, 1, 160, 160, 104])
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:05<00:00,  5.07s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:05<00:00,  5.07s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:05<00:00,  5.85s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:07<00:00,  7.00s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:07<00:00,  7.00s/it]
+Epoch=93: ave_dice_loss=0.95894, ave_bce_loss=0.01451
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.45s/it]
+Epoch=95: Training (0 / 1 Steps) (dice_loss=0.83487, bce_loss=0.01091): 100%|██████████| 1/1 [00:06<00:00,  6.42s/it]
+Epoch=95: Training (0 / 1 Steps) (dice_loss=0.83487, bce_loss=0.01091): 100%|██████████| 1/1 [00:06<00:00,  6.42s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:06<00:00,  6.91s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:06<00:00,  6.91s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:06<00:00,  6.57s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:06<00:00,  6.57s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:06<00:00,  6.19s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:06<00:00,  6.19s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:05<00:00,  5.86s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:05<00:00,  5.86s/it]
+Epoch=99: Training (0 / 1 Steps) (dice_loss=0.93506, bce_loss=0.02309): 100%|██████████| 1/1 [00:06<00:00,  6.49s/it]
+Epoch=99: Training (0 / 1 Steps) (dice_loss=0.93506, bce_loss=0.02309): 100%|██████████| 1/1 [00:06<00:00,  6.49s/it]

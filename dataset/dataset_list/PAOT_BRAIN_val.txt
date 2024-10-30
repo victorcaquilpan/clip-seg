@@ -1,0 +1,1 @@
+20_pedbrain/100p_train/images/BraTS-PED-00002-000.nii.gz	20_pedbrain/100p_train/labels/BraTS-PED-00002-000.nii.gz

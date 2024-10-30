@@ -1,0 +1,956 @@
+2024-08-15 09:46:34,193 INFO    StreamThr :338542 [internal.py:wandb_internal():85] W&B internal server running at pid: 338542, started at: 2024-08-15 09:46:34.192172
+2024-08-15 09:46:34,201 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status
+2024-08-15 09:46:34,205 INFO    WriterThread:338542 [datastore.py:open_for_write():87] open: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/run-apn5rbn8.wandb
+2024-08-15 09:46:34,206 DEBUG   SenderThread:338542 [sender.py:send():391] send: header
+2024-08-15 09:46:34,212 DEBUG   SenderThread:338542 [sender.py:send():391] send: run
+2024-08-15 09:46:34,844 INFO    SenderThread:338542 [dir_watcher.py:__init__():211] watching files in: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files
+2024-08-15 09:46:34,844 INFO    SenderThread:338542 [sender.py:_start_run_threads():1200] run started: apn5rbn8 with start time 1723715194.193957
+2024-08-15 09:46:34,854 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: check_version
+2024-08-15 09:46:34,855 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: check_version
+2024-08-15 09:46:35,091 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: run_start
+2024-08-15 09:46:35,129 DEBUG   HandlerThread:338542 [system_info.py:__init__():26] System info init
+2024-08-15 09:46:35,129 DEBUG   HandlerThread:338542 [system_info.py:__init__():41] System info init done
+2024-08-15 09:46:35,129 INFO    HandlerThread:338542 [system_monitor.py:start():194] Starting system monitor
+2024-08-15 09:46:35,129 INFO    SystemMonitor:338542 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-15 09:46:35,129 INFO    HandlerThread:338542 [system_monitor.py:probe():214] Collecting system info
+2024-08-15 09:46:35,130 INFO    SystemMonitor:338542 [interfaces.py:start():188] Started cpu monitoring
+2024-08-15 09:46:35,131 INFO    SystemMonitor:338542 [interfaces.py:start():188] Started disk monitoring
+2024-08-15 09:46:35,133 INFO    SystemMonitor:338542 [interfaces.py:start():188] Started gpu monitoring
+2024-08-15 09:46:35,134 INFO    SystemMonitor:338542 [interfaces.py:start():188] Started memory monitoring
+2024-08-15 09:46:35,136 INFO    SystemMonitor:338542 [interfaces.py:start():188] Started network monitoring
+2024-08-15 09:46:35,149 DEBUG   HandlerThread:338542 [system_info.py:probe():152] Probing system
+2024-08-15 09:46:35,156 DEBUG   HandlerThread:338542 [system_info.py:_probe_git():137] Probing git
+2024-08-15 09:46:35,171 DEBUG   HandlerThread:338542 [system_info.py:_probe_git():145] Probing git done
+2024-08-15 09:46:35,171 DEBUG   HandlerThread:338542 [system_info.py:probe():200] Probing system done
+2024-08-15 09:46:35,171 DEBUG   HandlerThread:338542 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-117-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-08-15T09:46:35.150101', 'startedAt': '2024-08-15T09:46:34.177198', 'docker': None, 'cuda': None, 'args': ('--data_root_path', '../../data/', '--num_workers', '8', '--device', '0', '--num_samples', '1', '--uniform_sample', '--dataset_list', 'PAOT_BRAIN', '--datasetkey', '20', '--batch_size', '1', '--max_epoch', '100', '--local_rank', '0', '--log_name', '100p_train', '--report_wandb', '--save_epoch_freq', '10', '--pretrain', './pretrained_weights/unet.pth', '--word_embedding', './pretrained_weights/txt_encoding.pth'), 'state': 'running', 'program': '/workspace/CLIP-Driven-Universal-Model/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/ljwztc/CLIP-Driven-Universal-Model.git', 'commit': '4f82bdf45a50912ba35c6269584982e59489dbce'}, 'email': None, 'root': '/workspace/CLIP-Driven-Universal-Model', 'host': '4df0006c0849', 'username': 'root', 'executable': '/usr/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3342.537875, 'min': 800.0, 'max': 5050.0}, 'cpu_freq_per_core': [{'current': 3400.001, 'min': 800.0, 'max': 5000.0}, {'current': 3400.0, 'min': 800.0, 'max': 5000.0}, {'current': 3400.0, 'min': 800.0, 'max': 5200.0}, {'current': 3399.998, 'min': 800.0, 'max': 5200.0}, {'current': 3400.0, 'min': 800.0, 'max': 5000.0}, {'current': 3400.0, 'min': 800.0, 'max': 5000.0}, {'current': 3400.0, 'min': 800.0, 'max': 5000.0}, {'current': 2500.0, 'min': 800.0, 'max': 5000.0}, {'current': 3400.0, 'min': 800.0, 'max': 5000.0}, {'current': 3399.999, 'min': 800.0, 'max': 5000.0}, {'current': 3400.0, 'min': 800.0, 'max': 5200.0}, {'current': 3400.0, 'min': 800.0, 'max': 5200.0}, {'current': 2500.0, 'min': 800.0, 'max': 5000.0}, {'current': 3400.0, 'min': 800.0, 'max': 5000.0}, {'current': 3399.999, 'min': 800.0, 'max': 5000.0}, {'current': 3400.0, 'min': 800.0, 'max': 5000.0}], 'disk': {'/': {'total': 1876.4430084228516, 'used': 790.4622497558594}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 62.476966857910156}}
+2024-08-15 09:46:35,171 INFO    HandlerThread:338542 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-15 09:46:35,171 INFO    HandlerThread:338542 [system_monitor.py:probe():227] Publishing system info
+2024-08-15 09:46:35,173 INFO    HandlerThread:338542 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-15 09:46:35,184 DEBUG   SenderThread:338542 [sender.py:send():391] send: files
+2024-08-15 09:46:35,184 INFO    SenderThread:338542 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-08-15 09:46:35,644 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-15 09:46:35,644 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: python_packages
+2024-08-15 09:46:35,648 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:46:35,649 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:46:35,847 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/wandb-metadata.json
+2024-08-15 09:46:35,848 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/requirements.txt
+2024-08-15 09:46:35,961 DEBUG   SenderThread:338542 [sender.py:send():391] send: telemetry
+2024-08-15 09:46:36,195 INFO    wandb-upload_0:338542 [upload_job.py:push():130] Uploaded file /tmp/tmpqwoaruqewandb/kym2f0fs-wandb-metadata.json
+2024-08-15 09:46:39,965 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:46:44,970 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:46:49,973 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:46:52,149 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:46:52,152 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:46:52,881 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:46:53,402 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:46:54,593 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:46:54,883 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:46:55,591 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:46:55,810 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:46:56,591 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:46:57,598 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:46:58,594 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:46:59,597 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:00,596 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:01,173 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:47:01,596 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:02,598 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:03,598 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:04,601 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:05,602 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:06,601 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:07,151 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:47:07,152 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:47:07,435 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:47:07,603 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:07,909 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/config.yaml
+2024-08-15 09:47:08,602 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:09,602 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:10,605 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:11,603 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:12,613 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:13,153 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:47:13,603 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:14,608 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:14,917 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:15,605 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:16,608 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:16,919 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:17,637 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:18,462 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:47:18,642 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:18,920 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:19,648 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:20,646 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:20,923 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:21,649 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:22,154 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:47:22,155 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:47:22,650 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:22,926 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:23,564 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:47:23,660 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:24,660 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:24,929 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:25,661 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:26,661 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:26,932 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:27,660 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:28,665 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:28,934 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:28,958 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:47:29,660 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:30,663 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:30,934 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:31,664 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:32,668 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:32,936 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:33,667 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:34,192 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:47:34,677 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:34,941 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:35,136 DEBUG   SystemMonitor:338542 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-15 09:47:35,144 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:47:35,669 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:36,669 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:36,944 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:37,154 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:47:37,155 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:47:37,669 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:38,672 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:38,945 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:39,288 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:47:39,669 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:40,670 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:40,948 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:41,669 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:42,670 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:42,948 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:43,669 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:44,669 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:44,831 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:47:44,949 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:45,670 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:46,669 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:46,951 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:47,670 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:48,670 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:48,954 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:49,670 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:49,857 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:47:50,674 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:50,955 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:51,671 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:52,158 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:47:52,160 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:47:52,671 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:52,973 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:53,673 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:54,675 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:54,975 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:55,180 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:47:55,675 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:56,685 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:56,978 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:57,680 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:58,682 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:47:58,984 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:47:59,683 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:00,306 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:00,683 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:00,985 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:01,682 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:02,682 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:02,986 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:03,682 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:04,686 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:04,988 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:05,146 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:48:05,488 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:05,688 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:06,689 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:06,990 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:07,157 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:48:07,158 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:48:07,690 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:08,688 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:08,991 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:09,721 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:10,688 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:10,723 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:10,992 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:11,688 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:12,689 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:12,994 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:13,689 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:14,689 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:15,001 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:15,694 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:15,870 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:16,696 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:17,003 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:17,694 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:18,694 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:19,004 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:19,694 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:20,694 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:21,005 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:21,145 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:21,695 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:22,165 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:48:22,166 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:48:22,694 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:23,006 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:23,694 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:24,695 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:25,007 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:25,695 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:26,695 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:27,008 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:27,069 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:27,695 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:28,695 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:29,009 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:29,695 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:30,695 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:31,010 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:31,695 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:32,093 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:32,695 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:33,010 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:33,211 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-15 09:48:33,213 DEBUG   SenderThread:338542 [sender.py:send():391] send: history
+2024-08-15 09:48:33,213 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: summary_record
+2024-08-15 09:48:33,213 INFO    SenderThread:338542 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-15 09:48:34,011 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/wandb-summary.json
+2024-08-15 09:48:34,064 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:34,845 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:35,012 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:35,149 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:48:35,845 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:36,844 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:37,152 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:37,162 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:48:37,162 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:48:37,855 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:38,860 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:39,015 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:39,862 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:40,864 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:41,020 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:41,865 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:42,184 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:42,873 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:43,023 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:43,872 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:44,871 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:45,026 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:45,874 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:46,875 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:47,028 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:47,881 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:48,180 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:48,878 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:49,029 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:49,878 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:50,879 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:51,032 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:51,880 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:52,158 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:48:52,158 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:48:52,881 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:53,033 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:53,591 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:53,881 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:54,881 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:55,034 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:55,882 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:56,881 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:57,035 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:57,882 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:58,881 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:48:58,921 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:48:59,037 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:48:59,881 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:00,881 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:01,037 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:01,882 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:02,882 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:03,038 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:03,882 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:04,198 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:49:04,882 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:05,039 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:05,149 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:49:05,882 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:06,882 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:07,040 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:07,158 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:49:07,158 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:49:07,883 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:08,885 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:09,041 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:09,468 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:49:09,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:10,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:11,042 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:11,883 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:12,883 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:13,043 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:13,886 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:14,043 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:14,767 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:49:14,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:15,044 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:15,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:16,044 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:16,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:17,045 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:17,883 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:18,045 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:18,883 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:19,045 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:19,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:20,047 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:20,649 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:49:20,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:21,047 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:21,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:22,047 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:22,158 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:49:22,158 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:49:22,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:23,048 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:23,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:24,048 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:24,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:25,049 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:25,884 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:25,967 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:49:26,049 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:26,885 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:27,050 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:27,885 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:28,050 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:28,885 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:29,050 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:29,885 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:30,051 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:30,886 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:31,052 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:31,143 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:49:31,886 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:32,052 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:32,885 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:33,053 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:33,886 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:34,053 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:34,886 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:35,053 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:35,150 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:49:35,885 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:36,054 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:36,151 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:49:36,887 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:37,055 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:37,159 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:49:37,159 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:49:37,886 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:38,055 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:38,887 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:39,056 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:39,886 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:40,056 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:40,887 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:41,057 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:41,539 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:49:41,886 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:42,060 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:42,887 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:43,058 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:43,887 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:44,058 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:44,887 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:45,890 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:46,060 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:46,703 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:49:46,890 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:47,061 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:47,890 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:48,061 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:48,890 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:49,061 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:49,890 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:50,062 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:50,921 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:51,062 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:51,901 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:51,922 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:49:52,063 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:52,159 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:49:52,159 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:49:52,900 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:53,063 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:53,901 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:54,064 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:54,900 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:55,065 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:55,901 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:56,900 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:57,039 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:49:57,066 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:57,901 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:58,067 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:58,903 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:49:59,067 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:49:59,902 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:00,068 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:00,901 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:01,068 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:01,901 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:02,069 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:02,184 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:50:02,901 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:03,069 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:03,901 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:04,070 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:04,902 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:05,071 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:05,155 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:50:05,903 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:06,071 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:06,903 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:07,072 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:07,158 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:50:07,159 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:50:07,390 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:50:07,902 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:08,073 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:08,903 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:09,073 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:09,902 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:10,074 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:10,903 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:11,074 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:11,903 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:12,075 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:12,903 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:13,076 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:13,188 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:50:13,913 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:14,076 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:14,917 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:15,077 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:15,910 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:16,077 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:16,910 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:17,078 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:17,909 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:18,079 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:18,902 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:50:18,911 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:19,079 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:19,910 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:20,080 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:20,910 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:21,080 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:21,910 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:22,081 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:22,158 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:50:22,159 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:50:22,911 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:23,085 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:23,912 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:24,082 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:24,239 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:50:24,911 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:25,082 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:25,912 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:26,083 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:26,911 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:27,086 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:27,911 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:28,085 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:28,912 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:29,089 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:29,606 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:50:29,916 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:30,090 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:30,913 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:31,914 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:32,091 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:32,913 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:33,091 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:33,913 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:34,092 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:34,871 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:50:34,914 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:35,092 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:35,159 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:50:35,914 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:36,093 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:36,915 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:37,097 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:37,159 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:50:37,160 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:50:37,915 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:38,915 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:39,100 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:39,917 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:40,099 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:40,428 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:50:40,925 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:41,100 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:41,921 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:42,101 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:42,922 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:43,102 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:43,924 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:44,102 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:44,922 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:45,103 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:45,876 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:50:45,922 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:46,103 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:46,922 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:47,104 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:47,922 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:48,104 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:48,922 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:49,105 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:49,923 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:50,105 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:50,922 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:51,105 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:51,202 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:50:51,922 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:52,106 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:52,159 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:50:52,159 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:50:52,923 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:53,106 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:53,922 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:54,106 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:54,923 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:55,107 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:55,923 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:56,107 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:56,416 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:50:56,923 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:57,107 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:57,923 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:58,108 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:58,923 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:50:59,108 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:50:59,923 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:00,109 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:00,924 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:01,110 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:01,571 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:51:01,923 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:02,110 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:02,925 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:03,110 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:03,924 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:04,111 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:04,924 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:05,111 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:05,156 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:51:05,924 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:06,111 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:06,924 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:07,013 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:51:07,111 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:07,159 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:51:07,159 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:51:07,924 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:08,112 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:08,925 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:09,112 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:09,925 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:10,113 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:10,925 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:11,114 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:11,927 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:12,114 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:12,187 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:51:12,925 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:13,115 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:13,925 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:14,116 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:14,926 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:15,116 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:15,926 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:16,116 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:16,926 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:17,117 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:17,603 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:51:17,926 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:18,117 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:18,926 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:19,117 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:19,863 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-15 09:51:19,864 DEBUG   SenderThread:338542 [sender.py:send():391] send: history
+2024-08-15 09:51:19,864 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: summary_record
+2024-08-15 09:51:19,864 INFO    SenderThread:338542 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-15 09:51:19,926 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:20,118 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:20,118 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/wandb-summary.json
+2024-08-15 09:51:20,451 DEBUG   SenderThread:338542 [sender.py:send():391] send: files
+2024-08-15 09:51:20,451 INFO    SenderThread:338542 [sender.py:_save_file():1466] saving file media/images/val/examples_2_0485088aaa82ab56e7a1.png with policy now
+2024-08-15 09:51:20,494 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-15 09:51:20,495 DEBUG   SenderThread:338542 [sender.py:send():391] send: files
+2024-08-15 09:51:20,496 INFO    SenderThread:338542 [sender.py:_save_file():1466] saving file media/images/val/examples_2_4ff55ad20582e3d3e028.png with policy now
+2024-08-15 09:51:20,496 DEBUG   SenderThread:338542 [sender.py:send():391] send: files
+2024-08-15 09:51:20,496 INFO    SenderThread:338542 [sender.py:_save_file():1466] saving file media/images/val/examples_2_a3f8b1b1a06f7037f537.png with policy now
+2024-08-15 09:51:20,496 DEBUG   SenderThread:338542 [sender.py:send():391] send: history
+2024-08-15 09:51:20,496 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: summary_record
+2024-08-15 09:51:20,497 INFO    SenderThread:338542 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-15 09:51:21,119 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:21,119 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/wandb-summary.json
+2024-08-15 09:51:21,120 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/media/images/val/examples_2_0485088aaa82ab56e7a1.png
+2024-08-15 09:51:21,120 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/media/images/val/examples_2_4ff55ad20582e3d3e028.png
+2024-08-15 09:51:21,120 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/media/images/val/examples_2_a3f8b1b1a06f7037f537.png
+2024-08-15 09:51:21,120 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/media
+2024-08-15 09:51:21,121 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/media/images/val
+2024-08-15 09:51:21,121 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/media/images
+2024-08-15 09:51:21,212 INFO    wandb-upload_0:338542 [upload_job.py:push():130] Uploaded file /tmp/tmpqwoaruqewandb/tah7ujky-media/images/val/examples_2_0485088aaa82ab56e7a1.png
+2024-08-15 09:51:21,409 INFO    wandb-upload_2:338542 [upload_job.py:push():130] Uploaded file /tmp/tmpqwoaruqewandb/ashodqcq-media/images/val/examples_2_a3f8b1b1a06f7037f537.png
+2024-08-15 09:51:21,475 INFO    wandb-upload_1:338542 [upload_job.py:push():130] Uploaded file /tmp/tmpqwoaruqewandb/6s7yjxuu-media/images/val/examples_2_4ff55ad20582e3d3e028.png
+2024-08-15 09:51:21,580 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:22,075 INFO    wandb-upload_2:338542 [upload_job.py:push():130] Uploaded file /tmp/tmpqwoaruqewandb/59wd67l0-media/images/val/examples_2_a3f8b1b1a06f7037f537.png
+2024-08-15 09:51:22,121 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:22,125 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:22,175 INFO    wandb-upload_0:338542 [upload_job.py:push():130] Uploaded file /tmp/tmpqwoaruqewandb/kzzn03gt-media/images/val/examples_2_0485088aaa82ab56e7a1.png
+2024-08-15 09:51:22,354 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:51:22,354 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:51:22,681 INFO    wandb-upload_1:338542 [upload_job.py:push():130] Uploaded file /tmp/tmpqwoaruqewandb/byekahk8-media/images/val/examples_2_4ff55ad20582e3d3e028.png
+2024-08-15 09:51:23,125 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:23,592 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:51:24,122 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:25,126 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:26,127 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:27,129 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:28,130 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:29,132 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:29,242 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:51:30,135 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:30,140 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:31,134 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:32,134 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:32,138 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:33,133 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:34,140 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:34,142 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:34,329 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:51:35,141 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:35,160 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:51:36,142 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:36,148 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:37,149 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:37,352 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:51:37,354 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:51:38,153 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:38,155 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:39,151 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:39,809 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:51:40,156 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:40,159 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:41,160 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:42,157 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:42,468 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:43,473 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:44,162 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:44,512 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:45,458 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:51:45,513 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:46,163 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:46,525 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:47,518 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:48,166 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:48,520 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:49,528 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:50,168 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:50,526 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:50,601 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:51:51,534 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:52,173 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:52,355 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:51:52,355 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:51:52,533 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:53,535 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:54,177 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:54,537 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:55,536 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:55,937 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:51:56,181 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:56,545 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:57,540 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:58,183 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:51:58,545 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:51:59,548 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:00,184 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:00,548 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:00,969 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:01,551 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:02,188 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:02,552 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:03,551 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:04,190 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:04,557 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:05,169 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:52:05,554 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:06,003 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:06,196 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:06,561 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:07,367 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:52:07,368 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:52:07,558 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:08,198 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:08,562 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:09,567 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:10,201 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:10,567 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:11,236 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:11,570 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:12,205 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:12,573 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:13,574 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:14,207 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:14,647 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:15,588 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:16,210 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:16,587 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:16,672 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:17,591 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:18,213 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:18,592 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:19,596 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:20,217 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:20,619 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:21,645 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:22,219 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:22,373 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:52:22,373 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:52:22,646 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:22,654 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:23,647 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:24,229 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:24,647 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:25,650 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:26,237 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:26,650 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:27,653 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:27,974 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:28,242 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:28,654 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:29,655 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:30,253 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:30,661 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:31,662 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:32,254 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:32,658 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:33,226 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:33,659 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:34,256 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:34,660 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:35,171 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:52:35,659 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:36,260 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:36,659 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:37,372 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:52:37,377 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:52:37,658 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:38,262 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:38,529 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:38,660 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:39,661 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:40,264 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:40,663 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:41,664 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:42,265 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:42,664 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:43,665 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:43,793 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:44,265 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:44,664 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:44,951 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-15 09:52:44,952 DEBUG   SenderThread:338542 [sender.py:send():391] send: history
+2024-08-15 09:52:44,952 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: summary_record
+2024-08-15 09:52:44,952 INFO    SenderThread:338542 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-15 09:52:45,266 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/wandb-summary.json
+2024-08-15 09:52:45,705 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:46,267 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:46,704 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:47,704 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:48,703 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:49,501 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:49,708 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:50,707 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:51,708 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:52,375 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:52:52,376 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:52:52,707 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:53,706 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:54,285 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:54,511 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:54,706 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:55,707 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:56,296 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:56,712 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:57,710 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:58,297 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:52:58,713 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:52:59,514 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:52:59,714 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:00,299 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:00,715 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:01,715 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:02,302 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:02,715 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:03,720 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:04,308 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:04,720 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:04,912 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:53:05,181 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:53:05,722 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:06,316 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:06,723 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:07,384 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:53:07,385 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:53:07,729 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:08,329 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:08,746 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:09,748 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:09,945 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:53:10,336 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:10,752 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:11,754 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:12,338 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:12,755 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:13,756 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:14,340 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:14,757 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:15,016 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:53:15,755 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:16,343 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:16,755 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:17,756 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:18,349 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:18,757 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:19,757 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:20,352 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:20,356 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:53:20,757 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:21,757 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:22,357 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:22,378 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:53:22,379 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:53:22,759 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:23,764 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:24,359 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:24,766 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:25,431 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:53:25,771 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:26,361 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:26,783 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:27,788 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:28,365 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:28,789 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:29,790 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:30,370 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:30,790 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:31,221 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:53:31,795 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:32,378 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:32,795 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:33,799 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:34,384 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:34,802 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:35,182 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:53:35,799 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:36,389 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:36,523 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:53:36,801 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:37,378 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:53:37,379 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:53:37,799 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:38,391 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:38,800 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:39,799 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:40,393 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:40,799 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:41,727 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:53:41,812 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:42,397 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:42,810 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:43,821 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:44,400 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:44,824 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:45,829 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:46,405 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:46,830 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:47,346 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:53:47,832 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:48,407 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:48,833 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:49,835 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:50,410 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:50,838 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:51,841 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:52,382 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:53:52,383 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:53:52,413 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:52,711 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:53:52,841 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:53,848 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:54,417 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:54,849 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:55,847 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:56,420 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:56,847 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:57,848 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:58,161 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:53:58,422 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:53:58,846 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:53:59,846 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:00,424 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:54:00,847 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:01,847 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:02,429 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:54:02,846 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:03,305 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:54:03,846 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:04,431 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:54:04,848 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:05,181 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:54:05,847 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:06,432 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:54:06,847 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:07,393 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 09:54:07,393 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: stop_status
+2024-08-15 09:54:07,848 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:08,388 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:54:08,435 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:54:08,848 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:09,847 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:10,436 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:54:10,848 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:11,849 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:12,437 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:54:12,849 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:13,414 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 09:54:13,600 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-15 09:54:13,601 DEBUG   SenderThread:338542 [sender.py:send():391] send: history
+2024-08-15 09:54:13,602 DEBUG   SenderThread:338542 [sender.py:send_request():418] send_request: summary_record
+2024-08-15 09:54:13,602 INFO    SenderThread:338542 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-08-15 09:54:14,229 DEBUG   HandlerThread:338542 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 09:54:14,438 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:54:14,438 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/wandb-summary.json
+2024-08-15 09:54:15,438 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:54:15,529 INFO    memory    :338542 [interfaces.py:monitor():138] Process proc.memory.rssMB has exited.
+2024-08-15 09:54:15,530 DEBUG   SystemMonitor:338542 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-15 09:54:15,530 DEBUG   SystemMonitor:338542 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-15 09:54:15,533 DEBUG   SenderThread:338542 [sender.py:send():391] send: stats
+2024-08-15 09:54:16,439 INFO    Thread-12 :338542 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/CLIP-Driven-Universal-Model/wandb/run-20240815_094634-apn5rbn8/files/output.log
+2024-08-15 09:54:17,801 INFO    MainThread:338542 [internal.py:handle_exit():75] Internal process exited

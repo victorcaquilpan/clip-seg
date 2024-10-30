@@ -21,6 +21,8 @@ from utils.utils import dice_score, threshold_organ, visualize_label, merge_labe
 from utils.utils import TEMPLATE, ORGAN_NAME, NUM_CLASS
 from utils.utils import organ_post_process, threshold_organ
 
+import sys
+
 torch.multiprocessing.set_sharing_strategy('file_system')
 
 
@@ -129,7 +131,7 @@ def main():
     ## logging
     parser.add_argument('--log_name', default='inference', help='The path resume from checkpoint')
     ## model load
-    parser.add_argument('--resume', default='./pretrained_weights/swinunetr.pth', help='The path resume from checkpoint')
+    parser.add_argument('--resume', default='./out/testingv5/epoch_70.pth', help='The path resume from checkpoint')
     parser.add_argument('--pretrain', default='./pretrained_weights/swin_unetr.base_5000ep_f48_lr2e-4_pretrained.pt', 
                         help='The path of pretrain model')
     parser.add_argument('--backbone', default='swinunetr', help='backbone [swinunetr or unet]')
@@ -178,24 +180,30 @@ def main():
                     backbone=args.backbone,
                     encoding='word_embedding'
                     )
-    
+
+
     #Load pre-trained weights
     store_dict = model.state_dict()
     checkpoint = torch.load(args.resume)
     load_dict = checkpoint['net']
     # args.epoch = checkpoint['epoch']
 
-    for key, value in load_dict.items():
-        if 'swinViT' in key or 'encoder' in key or 'decoder' in key:
-            name = '.'.join(key.split('.')[1:])
-            name = 'backbone.' + name
-        else:
-            name = '.'.join(key.split('.')[1:])
-        store_dict[name] = value
+    # for key, value in load_dict.items():
+    #     if 'swinViT' in key or 'encoder' in key or 'decoder' in key:
+    #         name = '.'.join(key.split('.')[1:])
+    #         name = 'backbone.' + name
+    #     else:
+    #         name = '.'.join(key.split('.')[1:])
 
+            
+        # store_dict[name] = value
 
-    model.load_state_dict(store_dict)
+    #model.load_state_dict(store_dict, strict = False) # CHECK
+
+    model.load_state_dict(load_dict)
+
     print('Use pretrained weights')
+
 
     model.cuda()
 

@@ -15,20 +15,21 @@ class BinaryDiceLoss(nn.Module):
         self.p = p
         self.reduction = reduction
 
+    #     return dice_loss_avg
     def forward(self, predict, target):
         assert predict.shape[0] == target.shape[0], "predict & target batch size don't match"
-        predict = predict.contiguous().view(-1)
-        target = target.contiguous().view(-1)
+        # Flatten predictions and targets
+        prediction = predict.view(-1)
+        target = target.view(-1)
+        
+        # Calculate intersection and union
+        intersection = (prediction * target).sum()
+        dice = (2. * intersection + self.smooth) / (prediction.sum() + target.sum() + self.smooth)
+    
+        # Dice loss is 1 - Dice score
+        dice_loss = 1 - dice
 
-        num = torch.sum(torch.mul(predict, target), dim=1)
-        den = torch.sum(predict, dim=1) + torch.sum(target, dim=1) + self.smooth
-
-        dice_score = 2*num / den
-        dice_loss = 1 - dice_score
-
-        dice_loss_avg = dice_loss[target[:,0]!=-1].sum() / dice_loss[target[:,0]!=-1].shape[0]
-
-        return dice_loss_avg
+        return dice_loss
 
 class DiceLoss(nn.Module):
     def __init__(self, weight=None, ignore_index=None, num_classes=3, **kwargs):

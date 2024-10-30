@@ -1,0 +1,9 @@
+Use pretrained weights
+load word embedding
+train len 1
+val len 1
+Writing Tensorboard logs to  out/testing
+
+Epoch=0: Training (0 / 1 Steps) (dice_loss=0.99608, bce_loss=0.66819): 100%|██████████████████████████████████████████████████████████████████████| 1/1 [00:39<00:00, 39.30s/it]
+Epoch=0: ave_dice_loss=0.99608, ave_bce_loss=0.66819
+Epoch=0: Training (0 / 1 Steps) (dice_loss=0.99608, bce_loss=0.66819): 100%|██████████████████████████████████████████████████████████████████████| 1/1 [00:40<00:00, 40.13s/it]

@@ -48,13 +48,18 @@ from monai.config.type_definitions import NdarrayOrTensor
 
 from utils.utils import get_key
 
-ORGAN_DATASET_DIR = '/computenodes/node31/team1/jliu/data/ct_data/'
-ORGAN_LIST = 'dataset/dataset_list/PAOT.txt'
+parser = argparse.ArgumentParser()
+parser.add_argument("--phase", type=str, default = 'train', help="Training root")
+args = parser.parse_args()
+
+
+ORGAN_DATASET_DIR = os.path.join('../../data/')
+ORGAN_LIST = f'dataset/dataset_list/PAOT_BRAIN_{args.phase}.txt'
 NUM_WORKER = 8
-NUM_CLASS = 32
+NUM_CLASS = 35
 ## full list
 # TRANSFER_LIST = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10_03', '10_06', '10_07', '10_08', '10_09', '10_10', '12', '13', '14']
-TRANSFER_LIST = ['08']
+TRANSFER_LIST = ['20']
 TEMPLATE={
     '01': [1,2,3,4,5,6,7,8,9,10,11,12,13,14],
     '02': [1,0,3,4,5,6,7,0,0,0,11,0,0,14],
@@ -72,7 +77,8 @@ TEMPLATE={
     '10_07': [11, 28],  # post process
     '10_08': [15, 29],  # post process
     '10_09': [1],
-    '10_10': [31]
+    '10_10': [31],
+    '20':[33,34,35]
 }
 
 POST_TUMOR_DICT = {

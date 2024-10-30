@@ -1,0 +1,10 @@
+Use pretrained weights
+load word embedding
+train len 79
+val len 1
+Writing Tensorboard logs to  out/testing
+
+
+
+
+

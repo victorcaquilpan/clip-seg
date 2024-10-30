@@ -1,0 +1,1 @@
+{"train/loss_dice": 0.9906472731859256, "train/loss_bce": 0.7230936334683344, "_timestamp": 1723713590.7148545, "_runtime": 86.43413543701172, "_step": 1, "val/NC Brain": 0.0, "val/ED Brain": 0.0, "val/ET Brain": 0.0}

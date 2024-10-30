@@ -1,0 +1,33 @@
+Use pretrained weights
+load word embedding
+train len 39
+val len 1
+Writing Tensorboard logs to  out/testing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=0: Training (38 / 39 Steps) (dice_loss=0.99679, bce_loss=0.67303): 100%|███████████████████████████████| 39/39 [00:59<00:00,  1.01it/s]
+Epoch=0: Training (38 / 39 Steps) (dice_loss=0.99679, bce_loss=0.67303): 100%|███████████████████████████████| 39/39 [01:00<00:00,  1.55s/it]
+  0%|                                                                                                                  | 0/1 [00:00<?, ?it/s]
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:06<00:00,  6.98s/it]
+Task20| NC Brain: 0.0000, ED Brain: 0.0000, ET Brain: 0.0000,
+

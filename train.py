@@ -2,32 +2,27 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 import numpy as np
-import matplotlib.pyplot as plt
 from tqdm import tqdm
 import os
 import argparse
-import time
-
+import wandb
+import copy
 import warnings
 warnings.filterwarnings("ignore")
-
 import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel
 from tensorboardX import SummaryWriter
-
 from monai.losses import DiceCELoss
 from monai.inferers import sliding_window_inference
 from monai.data import load_decathlon_datalist, decollate_batch, DistributedSampler
 from monai.transforms import AsDiscrete
 from monai.metrics import DiceMetric
-
 from model.Universal_model import Universal_model
 from dataset.dataloader import get_loader
 from utils import loss
-from utils.utils import dice_score, check_data, TEMPLATE, get_key, NUM_CLASS
+from utils.utils import dice_score, check_data, TEMPLATE, get_key, NUM_CLASS, ORGAN_NAME,threshold_organ
 from optimizers.lr_scheduler import LinearWarmupCosineAnnealingLR
-
-
+import matplotlib.pyplot as plt
 torch.multiprocessing.set_sharing_strategy('file_system')
 
 
@@ -71,40 +66,54 @@ def validation(model, ValLoader, args):
         with torch.no_grad():
             pred = sliding_window_inference(image, (args.roi_x, args.roi_y, args.roi_z), 1, model)
             pred_sigmoid = F.sigmoid(pred)
-        
+
         B = pred_sigmoid.shape[0]
         for b in range(B):
             template_key = get_key(name[b])
             organ_list = TEMPLATE[template_key]
             for organ in organ_list:
                 dice_organ = dice_score(pred_sigmoid[b,organ-1,:,:,:], label[b,organ-1,:,:,:].cuda())
-                dice_list[template_key][0][organ-1] += dice_organ.item()
+                dice_list[template_key][0][organ-1] += dice_organ[0].cpu().numpy()
+                # dice_list[template_key][0][organ-1] += dice_organ.item()
                 dice_list[template_key][1][organ-1] += 1
     
     ave_organ_dice = np.zeros((2, NUM_CLASS))
     if args.local_rank == 0:
-        with open('out/'+args.log_name+f'/val_{args.epoch}.txt', 'w') as f:
-            for key in TEMPLATE.keys():
-                organ_list = TEMPLATE[key]
-                content = 'Task%s| '%(key)
-                for organ in organ_list:
-                    dice = dice_list[key][0][organ-1] / dice_list[key][1][organ-1]
-                    content += '%s: %.4f, '%(ORGAN_NAME[organ-1], dice)
-                    ave_organ_dice[0][organ-1] += dice_list[key][0][organ-1]
-                    ave_organ_dice[1][organ-1] += dice_list[key][1][organ-1]
-                print(content)
-                f.write(content)
-                f.write('\n')
-            content = 'Average | '
-            for i in range(NUM_CLASS):
-                content += '%s: %.4f, '%(ORGAN_NAME[i], ave_organ_dice[0][organ-1] / ave_organ_dice[1][organ-1])
+        #with open('out/'+args.log_name+f'/val_{args.epoch}.txt', 'w') as f:
+        for key in args.datasetkey:
+            organ_list = TEMPLATE[key]
+            content = 'Task%s| '%(key)
+            for organ in organ_list:
+                dice = dice_list[key][0][organ-1] / dice_list[key][1][organ-1]
+                content += '%s: %.4f, '%(ORGAN_NAME[organ-1], dice)
+                ave_organ_dice[0][organ-1] += dice_list[key][0][organ-1]
+                ave_organ_dice[1][organ-1] += dice_list[key][1][organ-1]
             print(content)
-            f.write(content)
-            f.write('\n')
-            
-            
+            # f.write(content)
+            # f.write('\n')
+        content = 'Average | '
+        if args.report_wandb:
+            wandb_val_data = {}
+        for i in organ_list:
+            content += '%s: %.4f, '%(ORGAN_NAME[i-1], ave_organ_dice[0][i-1] / ave_organ_dice[1][i-1])
+            if args.report_wandb:
+                wandb_val_data[f'val/{ORGAN_NAME[i-1]}'] = ave_organ_dice[0][i-1] / ave_organ_dice[1][i-1]
+        #print(content)
+        #f.write(content)
+        #f.write('\n')
+        if args.report_wandb:
+            wandb.log(wandb_val_data)
 
+            # Get the output image
+            pred_hard = threshold_organ(pred_sigmoid)
+            pred_hard = pred_hard.cpu()
+            # Generate output for wandb
+            img_sample = image[0][0][80].cpu().numpy()
+            y_sample = label[0][32][80].numpy()
+            pred_sample = pred_hard[0][32][80].numpy()
+            wandb.log({'val/examples': [wandb.Image(img_sample,caption = 'image'), wandb.Image(y_sample,caption = 'label'), wandb.Image(pred_sample, caption = "pred")]})
 
+            
 def process(args):
     rank = 0
 
@@ -124,7 +133,9 @@ def process(args):
 
     #Load pre-trained weights
     if args.pretrain is not None:
-        model.load_params(torch.load(args.pretrain)["state_dict"])
+        #model.load_params(torch.load(args.pretrain)["state_dict"]) ## CHECK
+        model.load_params(torch.load(args.pretrain)["net"]) ## CHECK
+        
 
     if args.trans_encoding == 'word_embedding':
         word_embedding = torch.load(args.word_embedding)
@@ -166,7 +177,13 @@ def process(args):
 
     torch.backends.cudnn.benchmark = True
 
+    # Getting the train loader
     train_loader, train_sampler = get_loader(args)
+
+    # Getting the validation loader
+    val_args = copy.deepcopy(args)
+    val_args.phase = 'validation'
+    val_loader, val_sampler = get_loader(val_args)
 
     if rank == 0:
         writer = SummaryWriter(log_dir='out/' + args.log_name)
@@ -184,6 +201,13 @@ def process(args):
             writer.add_scalar('train_bce_loss', loss_bce, args.epoch)
             writer.add_scalar('lr', scheduler.get_lr(), args.epoch)
 
+            # Write in Wandb
+            if args.report_wandb:
+                wandb.log({'train/loss_dice': loss_dice,'train/loss_bce' : loss_bce})
+
+        if args.epoch % args.save_epoch_freq == 0:
+            validation(model, val_loader,args)
+
         if (args.epoch % args.store_num == 0 and args.epoch != 0) and rank == 0:
             checkpoint = {
                 "net": model.state_dict(),
@@ -198,7 +222,7 @@ def process(args):
 
         args.epoch += 1
 
-    dist.destroy_process_group()
+    #dist.destroy_process_group()
 
 def main():
     parser = argparse.ArgumentParser()
@@ -256,8 +280,13 @@ def main():
                                             help='the content for ')
     parser.add_argument('--cache_dataset', action="store_true", default=False, help='whether use cache dataset')
     parser.add_argument('--cache_rate', default=0.005, type=float, help='The percentage of cached data in total')
+    parser.add_argument('--save_epoch_freq', default=10, type=int, help='Frequency to save validation')
+    parser.add_argument('--report_wandb', action="store_true", default = False, help='Send log to Wandb')
 
     args = parser.parse_args()
+
+    if args.report_wandb:
+        wandb.init(project="clipseg", name=args.log_name) 
     
     process(args=args)
 

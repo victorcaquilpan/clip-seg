@@ -99,11 +99,9 @@ class Universal_model(nn.Module):
                 nn.Conv3d(256, 256, kernel_size=1, stride=1, padding=0)
             )
         else:
-            raise Exception('{} backbone is not implemented in curretn version'.format(backbone))
+            raise Exception('{} backbone is not implemented in current version'.format(backbone))
 
         self.encoding = encoding
-
-
         weight_nums, bias_nums = [], []
         weight_nums.append(8*8)
         weight_nums.append(8*8)
@@ -125,17 +123,23 @@ class Universal_model(nn.Module):
         if self.backbone_name == 'swinunetr':
             store_dict = self.backbone.state_dict()
             for key in model_dict.keys():
-                if 'out' not in key:
-                    store_dict[key] = model_dict[key]
-
-            self.backbone.load_state_dict(store_dict)
+                # if 'out' not in key:
+                #     store_dict[key] = model_dict[key]
+                if 'out_tr' not in key:
+                    store_dict[key.replace("module.", "")] = model_dict[key]
+            # for key in store_dict.keys():
+            #     if "module" in key:
+            #         key = key.replace("module.","")
+            # self.backbone.load_state_dict(store_dict)
+            self.backbone.load_state_dict(store_dict, strict = False)
             print('Use pretrained weights')
         elif self.backbone_name == 'unet':
             store_dict = self.backbone.state_dict()
             for key in model_dict.keys():
                 if 'out_tr' not in key:
                     store_dict[key.replace("module.", "")] = model_dict[key]
-            self.backbone.load_state_dict(store_dict)
+            # self.backbone.load_state_dict(store_dict) ##### CHECK
+            self.backbone.load_state_dict(store_dict, strict = False)
             print('Use pretrained weights')
 
     def encoding_task(self, task_id):

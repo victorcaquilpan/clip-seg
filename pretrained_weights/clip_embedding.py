@@ -10,7 +10,7 @@ ORGAN_NAME = ['Spleen', 'Right Kidney', 'Left Kidney', 'Gall Bladder', 'Esophagu
                 'Right Lung', 'Left Lung', 'Colon', 'Intestine', 'Rectum', 
                 'Bladder', 'Prostate', 'Left Head of Femur', 'Right Head of Femur', 'Celiac Truck',
                 'Kidney Tumor', 'Liver Tumor', 'Pancreas Tumor', 'Hepatic Vessel Tumor', 'Lung Tumor', 
-                'Colon Tumor', 'Kidney Cyst']
+                'Colon Tumor', 'Kidney Cyst', 'NC Brain', 'ED Brain', 'ET Brain']
 
 # Load the model
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -23,5 +23,5 @@ text_inputs = torch.cat([clip.tokenize(f'A computerized tomography of a {item}')
 with torch.no_grad():
     text_features = model.encode_text(text_inputs)
     print(text_features.shape, text_features.dtype)
-    torch.save(text_features, 'txt_encoding.pth')
+    torch.save(text_features, 'pretrained_weights/txt_encoding.pth')
 

@@ -1,0 +1,159 @@
+{
+    "os": "Linux-6.8.0-47-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-10-29T07:21:49.216250",
+    "startedAt": "2024-10-29T07:21:48.277261",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--data_root_path",
+        "../../data/",
+        "--num_workers",
+        "8",
+        "--device",
+        "0",
+        "--num_samples",
+        "1",
+        "--uniform_sample",
+        "--backbone",
+        "swinunetr",
+        "--dataset_list",
+        "PAOT_BRAIN",
+        "--datasetkey",
+        "20",
+        "--batch_size",
+        "2",
+        "--max_epoch",
+        "1001",
+        "--local_rank",
+        "0",
+        "--log_name",
+        "testing-swinutrv2",
+        "--report_wandb",
+        "--save_epoch_freq",
+        "10",
+        "--pretrain",
+        "./pretrained_weights/swinunetr.pth",
+        "--word_embedding",
+        "./pretrained_weights/txt_encoding.pth"
+    ],
+    "state": "running",
+    "program": "/workspace/CLIP-Driven-Universal-Model/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ljwztc/CLIP-Driven-Universal-Model.git",
+        "commit": "4f82bdf45a50912ba35c6269584982e59489dbce"
+    },
+    "email": null,
+    "root": "/workspace/CLIP-Driven-Universal-Model",
+    "host": "4df0006c0849",
+    "username": "root",
+    "executable": "/usr/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3652.8873749999993,
+        "min": 800.0,
+        "max": 5050.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4700.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4538.405,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 4700.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3259.235,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 1277.218,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 1601.002,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4536.607,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.37,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 4700.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3722.651,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 4339.4,
+            "min": 800.0,
+            "max": 5000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1876.4430084228516,
+            "used": 1538.6800842285156
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 62.48000717163086
+    }
+}

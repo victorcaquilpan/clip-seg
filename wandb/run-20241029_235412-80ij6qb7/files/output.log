@@ -1,0 +1,2029 @@
+Use pretrained weights
+load word embedding
+train len 79
+val len 1
+Writing Tensorboard logs to  out/testing-unetv2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=0: Training (38 / 40 Steps) (dice_loss=0.98262, bce_loss=0.65212):  98%|█████████▊| 39/40 [00:52<00:01,  1.02s/it]
+Epoch=0: ave_dice_loss=0.99062, ave_bce_loss=0.68787
+Epoch=0: Training (39 / 40 Steps) (dice_loss=0.99775, bce_loss=0.64007): 100%|██████████| 40/40 [00:56<00:00,  1.41s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.03s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=1: Training (38 / 40 Steps) (dice_loss=0.98528, bce_loss=0.55199):  98%|█████████▊| 39/40 [00:44<00:01,  1.05s/it]
+Epoch=1: Training (39 / 40 Steps) (dice_loss=0.98636, bce_loss=0.54552): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=2: Training (36 / 40 Steps) (dice_loss=0.97992, bce_loss=0.36761):  92%|█████████▎| 37/40 [00:42<00:03,  1.03s/it]
+Epoch=2: Training (39 / 40 Steps) (dice_loss=0.99464, bce_loss=0.32540): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=3: Training (36 / 40 Steps) (dice_loss=0.98216, bce_loss=0.17277):  92%|█████████▎| 37/40 [00:43<00:03,  1.07s/it]
+Epoch=3: Training (39 / 40 Steps) (dice_loss=0.99060, bce_loss=0.16539): 100%|██████████| 40/40 [00:46<00:00,  1.15s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=4: Training (37 / 40 Steps) (dice_loss=0.97818, bce_loss=0.03703):  95%|█████████▌| 38/40 [00:43<00:02,  1.03s/it]
+Epoch=4: Training (39 / 40 Steps) (dice_loss=0.99054, bce_loss=0.04127): 100%|██████████| 40/40 [00:44<00:00,  1.12s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=5: Training (36 / 40 Steps) (dice_loss=0.95525, bce_loss=0.04247):  92%|█████████▎| 37/40 [00:43<00:03,  1.01s/it]
+
+Epoch=5: Training (39 / 40 Steps) (dice_loss=0.91450, bce_loss=0.05390): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=6: Training (37 / 40 Steps) (dice_loss=0.96991, bce_loss=0.02791):  95%|█████████▌| 38/40 [00:45<00:02,  1.09s/it]
+Epoch=6: Training (39 / 40 Steps) (dice_loss=0.97395, bce_loss=0.01453): 100%|██████████| 40/40 [00:46<00:00,  1.17s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=7: Training (36 / 40 Steps) (dice_loss=0.93180, bce_loss=0.02963):  92%|█████████▎| 37/40 [00:44<00:03,  1.08s/it]
+Epoch=7: Training (39 / 40 Steps) (dice_loss=0.96557, bce_loss=0.02256): 100%|██████████| 40/40 [00:46<00:00,  1.17s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=8: Training (36 / 40 Steps) (dice_loss=0.91396, bce_loss=0.03760):  92%|█████████▎| 37/40 [00:43<00:03,  1.04s/it]
+Epoch=8: Training (39 / 40 Steps) (dice_loss=0.92735, bce_loss=0.03158): 100%|██████████| 40/40 [00:46<00:00,  1.15s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=9: Training (37 / 40 Steps) (dice_loss=0.94180, bce_loss=0.06129):  95%|█████████▌| 38/40 [00:43<00:02,  1.02s/it]
+Epoch=9: Training (39 / 40 Steps) (dice_loss=0.84121, bce_loss=0.01596): 100%|██████████| 40/40 [00:44<00:00,  1.12s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=10: Training (36 / 40 Steps) (dice_loss=0.93372, bce_loss=0.05995):  92%|█████████▎| 37/40 [00:42<00:03,  1.01s/it]
+Epoch=10: Training (39 / 40 Steps) (dice_loss=0.83730, bce_loss=0.06112): 100%|██████████| 40/40 [00:44<00:00,  1.12s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+['20_pedbrain/100p_train/labels/BraTS-PED-00002-000'] torch.Size([1, 1, 160, 160, 104])
+100%|██████████| 1/1 [00:01<00:00,  1.97s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=11: Training (37 / 40 Steps) (dice_loss=0.88030, bce_loss=0.05315):  95%|█████████▌| 38/40 [00:44<00:02,  1.01s/it]
+Epoch=11: Training (39 / 40 Steps) (dice_loss=0.87410, bce_loss=0.01414): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=12: Training (38 / 40 Steps) (dice_loss=0.90580, bce_loss=0.02778):  95%|█████████▌| 38/40 [00:44<00:02,  1.01s/it]
+Epoch=12: Training (39 / 40 Steps) (dice_loss=0.81492, bce_loss=0.01387): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=13: Training (36 / 40 Steps) (dice_loss=0.96366, bce_loss=0.05640):  92%|█████████▎| 37/40 [00:44<00:03,  1.07s/it]
+
+Epoch=13: Training (39 / 40 Steps) (dice_loss=0.69931, bce_loss=0.01451): 100%|██████████| 40/40 [00:47<00:00,  1.19s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=14: Training (37 / 40 Steps) (dice_loss=0.95863, bce_loss=0.02730):  95%|█████████▌| 38/40 [00:43<00:02,  1.02s/it]
+Epoch=14: Training (39 / 40 Steps) (dice_loss=0.99944, bce_loss=0.02899): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=15: Training (37 / 40 Steps) (dice_loss=0.91109, bce_loss=0.01019):  95%|█████████▌| 38/40 [00:44<00:02,  1.05s/it]
+Epoch=15: Training (39 / 40 Steps) (dice_loss=0.74636, bce_loss=0.01714): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=16: Training (38 / 40 Steps) (dice_loss=0.82224, bce_loss=0.07009):  98%|█████████▊| 39/40 [00:44<00:01,  1.03s/it]
+Epoch=16: Training (39 / 40 Steps) (dice_loss=0.78271, bce_loss=0.02630): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=17: Training (37 / 40 Steps) (dice_loss=0.82647, bce_loss=0.04314):  92%|█████████▎| 37/40 [00:43<00:03,  1.02s/it]
+Epoch=17: Training (39 / 40 Steps) (dice_loss=0.97934, bce_loss=0.02713): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=18: Training (37 / 40 Steps) (dice_loss=0.90867, bce_loss=0.01210):  95%|█████████▌| 38/40 [00:44<00:02,  1.03s/it]
+Epoch=18: Training (39 / 40 Steps) (dice_loss=0.71640, bce_loss=0.01997): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=19: Training (38 / 40 Steps) (dice_loss=0.74361, bce_loss=0.02303):  98%|█████████▊| 39/40 [00:44<00:01,  1.04s/it]
+Epoch=19: Training (39 / 40 Steps) (dice_loss=0.80680, bce_loss=0.01477): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=20: Training (39 / 40 Steps) (dice_loss=0.68581, bce_loss=0.01510): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=20: ave_dice_loss=0.78097, ave_bce_loss=0.03796
+
+100%|██████████| 1/1 [00:01<00:00,  2.00s/it]
+100%|██████████| 1/1 [00:02<00:00,  2.07s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=21: Training (37 / 40 Steps) (dice_loss=0.71731, bce_loss=0.04008):  95%|█████████▌| 38/40 [00:43<00:02,  1.02s/it]
+Epoch=21: Training (39 / 40 Steps) (dice_loss=0.73868, bce_loss=0.01179): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=22: Training (37 / 40 Steps) (dice_loss=0.85296, bce_loss=0.02404):  95%|█████████▌| 38/40 [00:44<00:02,  1.06s/it]
+Epoch=22: Training (39 / 40 Steps) (dice_loss=0.99734, bce_loss=0.00171): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=23: Training (37 / 40 Steps) (dice_loss=0.98067, bce_loss=0.02445):  95%|█████████▌| 38/40 [00:43<00:02,  1.03s/it]
+Epoch=23: Training (39 / 40 Steps) (dice_loss=0.70549, bce_loss=0.10467): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=24: Training (38 / 40 Steps) (dice_loss=0.71214, bce_loss=0.02319):  98%|█████████▊| 39/40 [00:44<00:01,  1.04s/it]
+Epoch=24: Training (39 / 40 Steps) (dice_loss=0.86955, bce_loss=0.05910): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=25: Training (36 / 40 Steps) (dice_loss=0.74057, bce_loss=0.02256):  92%|█████████▎| 37/40 [00:42<00:03,  1.03s/it]
+Epoch=25: Training (39 / 40 Steps) (dice_loss=0.67449, bce_loss=0.02111): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=26: Training (37 / 40 Steps) (dice_loss=0.87826, bce_loss=0.01747):  95%|█████████▌| 38/40 [00:43<00:02,  1.02s/it]
+Epoch=26: Training (39 / 40 Steps) (dice_loss=0.67226, bce_loss=0.01839): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=27: Training (38 / 40 Steps) (dice_loss=0.75205, bce_loss=0.03603):  98%|█████████▊| 39/40 [00:44<00:01,  1.02s/it]
+Epoch=27: Training (39 / 40 Steps) (dice_loss=0.71570, bce_loss=0.01413): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=28: Training (37 / 40 Steps) (dice_loss=0.73760, bce_loss=0.01422):  92%|█████████▎| 37/40 [00:43<00:03,  1.02s/it]
+Epoch=28: Training (39 / 40 Steps) (dice_loss=0.77132, bce_loss=0.02652): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=29: Training (37 / 40 Steps) (dice_loss=0.70960, bce_loss=0.00794):  95%|█████████▌| 38/40 [00:43<00:02,  1.08s/it]
+Epoch=29: Training (39 / 40 Steps) (dice_loss=0.67050, bce_loss=0.02714): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=30: Training (38 / 40 Steps) (dice_loss=0.73475, bce_loss=0.02787):  98%|█████████▊| 39/40 [00:45<00:01,  1.01s/it]
+Epoch=30: ave_dice_loss=0.75984, ave_bce_loss=0.02997
+Epoch=30: Training (39 / 40 Steps) (dice_loss=0.72810, bce_loss=0.07284): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:01<00:00,  2.00s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=31: Training (37 / 40 Steps) (dice_loss=0.79454, bce_loss=0.01571):  95%|█████████▌| 38/40 [00:43<00:02,  1.02s/it]
+Epoch=31: Training (39 / 40 Steps) (dice_loss=0.88739, bce_loss=0.03437): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=32: Training (37 / 40 Steps) (dice_loss=0.82759, bce_loss=0.05516):  95%|█████████▌| 38/40 [00:43<00:02,  1.03s/it]
+Epoch=32: Training (39 / 40 Steps) (dice_loss=0.74997, bce_loss=0.02649): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=33: Training (36 / 40 Steps) (dice_loss=0.75283, bce_loss=0.01133):  92%|█████████▎| 37/40 [00:42<00:03,  1.01s/it]
+
+Epoch=33: Training (39 / 40 Steps) (dice_loss=0.99977, bce_loss=0.02666): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=34: Training (37 / 40 Steps) (dice_loss=0.86526, bce_loss=0.01741):  92%|█████████▎| 37/40 [00:44<00:03,  1.03s/it]
+Epoch=34: Training (39 / 40 Steps) (dice_loss=0.99990, bce_loss=0.04037): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=35: Training (38 / 40 Steps) (dice_loss=0.81650, bce_loss=0.06446):  98%|█████████▊| 39/40 [00:44<00:01,  1.01s/it]
+Epoch=35: Training (39 / 40 Steps) (dice_loss=0.68831, bce_loss=0.02120): 100%|██████████| 40/40 [00:44<00:00,  1.12s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=36: Training (37 / 40 Steps) (dice_loss=0.81577, bce_loss=0.02980):  92%|█████████▎| 37/40 [00:43<00:03,  1.02s/it]
+Epoch=36: Training (39 / 40 Steps) (dice_loss=0.76207, bce_loss=0.01381): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=37: Training (37 / 40 Steps) (dice_loss=0.78979, bce_loss=0.03882):  95%|█████████▌| 38/40 [00:43<00:02,  1.05s/it]
+Epoch=37: Training (39 / 40 Steps) (dice_loss=0.73186, bce_loss=0.02073): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=38: Training (37 / 40 Steps) (dice_loss=0.81496, bce_loss=0.04354):  95%|█████████▌| 38/40 [00:44<00:02,  1.08s/it]
+Epoch=38: Training (39 / 40 Steps) (dice_loss=0.75346, bce_loss=0.01636): 100%|██████████| 40/40 [00:46<00:00,  1.16s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=39: Training (37 / 40 Steps) (dice_loss=0.69817, bce_loss=0.06392):  95%|█████████▌| 38/40 [00:44<00:02,  1.02s/it]
+Epoch=39: Training (39 / 40 Steps) (dice_loss=0.82777, bce_loss=0.02986): 100%|██████████| 40/40 [00:45<00:00,  1.15s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=40: Training (37 / 40 Steps) (dice_loss=0.73396, bce_loss=0.01776):  95%|█████████▌| 38/40 [00:44<00:02,  1.04s/it]
+Epoch=40: ave_dice_loss=0.77480, ave_bce_loss=0.03060
+Epoch=40: Training (39 / 40 Steps) (dice_loss=0.77867, bce_loss=0.02190): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:01<00:00,  1.99s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=41: Training (37 / 40 Steps) (dice_loss=0.79742, bce_loss=0.01702):  95%|█████████▌| 38/40 [00:44<00:02,  1.03s/it]
+Epoch=41: Training (39 / 40 Steps) (dice_loss=0.67209, bce_loss=0.02934): 100%|██████████| 40/40 [00:46<00:00,  1.16s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=42: Training (39 / 40 Steps) (dice_loss=0.66985, bce_loss=0.03073): 100%|██████████| 40/40 [00:45<00:00,  1.15it/s]
+Epoch=42: Training (39 / 40 Steps) (dice_loss=0.66985, bce_loss=0.03073): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=43: Training (36 / 40 Steps) (dice_loss=0.71999, bce_loss=0.05758):  92%|█████████▎| 37/40 [00:43<00:03,  1.03s/it]
+Epoch=43: Training (39 / 40 Steps) (dice_loss=0.71207, bce_loss=0.05206): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=44: Training (37 / 40 Steps) (dice_loss=0.73212, bce_loss=0.01484):  95%|█████████▌| 38/40 [00:43<00:02,  1.03s/it]
+Epoch=44: Training (39 / 40 Steps) (dice_loss=0.69982, bce_loss=0.07376): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=45: Training (37 / 40 Steps) (dice_loss=0.69776, bce_loss=0.02555):  95%|█████████▌| 38/40 [00:44<00:02,  1.11s/it]
+Epoch=45: Training (39 / 40 Steps) (dice_loss=0.71036, bce_loss=0.01369): 100%|██████████| 40/40 [00:46<00:00,  1.16s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=46: Training (39 / 40 Steps) (dice_loss=0.75701, bce_loss=0.01763):  98%|█████████▊| 39/40 [00:46<00:01,  1.03s/it]
+Epoch=46: Training (39 / 40 Steps) (dice_loss=0.75701, bce_loss=0.01763): 100%|██████████| 40/40 [00:46<00:00,  1.17s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=47: Training (36 / 40 Steps) (dice_loss=0.77948, bce_loss=0.01522):  92%|█████████▎| 37/40 [00:43<00:03,  1.03s/it]
+Epoch=47: Training (39 / 40 Steps) (dice_loss=0.71865, bce_loss=0.01840): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=48: Training (38 / 40 Steps) (dice_loss=0.74176, bce_loss=0.02427):  98%|█████████▊| 39/40 [00:46<00:01,  1.02s/it]
+Epoch=48: Training (39 / 40 Steps) (dice_loss=0.67945, bce_loss=0.02046): 100%|██████████| 40/40 [00:46<00:00,  1.17s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=49: Training (37 / 40 Steps) (dice_loss=0.75579, bce_loss=0.02943):  95%|█████████▌| 38/40 [00:43<00:02,  1.03s/it]
+Epoch=49: Training (39 / 40 Steps) (dice_loss=0.67402, bce_loss=0.01512): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=50: Training (38 / 40 Steps) (dice_loss=0.77291, bce_loss=0.03949):  98%|█████████▊| 39/40 [00:44<00:01,  1.01s/it]
+Epoch=50: ave_dice_loss=0.72411, ave_bce_loss=0.03361
+Epoch=50: Training (39 / 40 Steps) (dice_loss=0.66630, bce_loss=0.00637): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+Task20| NC Brain: 0.6889, ED Brain: 0.0000, ET Brain: 0.4167,
+100%|██████████| 1/1 [00:02<00:00,  2.02s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=51: Training (39 / 40 Steps) (dice_loss=0.65273, bce_loss=0.02313): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/40 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=52: Training (37 / 40 Steps) (dice_loss=0.66656, bce_loss=0.00934):  95%|█████████▌| 38/40 [00:43<00:02,  1.06s/it]
+Epoch=52: Training (39 / 40 Steps) (dice_loss=0.73543, bce_loss=0.02287): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=53: Training (39 / 40 Steps) (dice_loss=0.67508, bce_loss=0.01326): 100%|██████████| 40/40 [00:46<00:00,  1.16s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/40 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=54: Training (37 / 40 Steps) (dice_loss=0.78665, bce_loss=0.03213):  95%|█████████▌| 38/40 [00:43<00:02,  1.03s/it]
+Epoch=54: Training (39 / 40 Steps) (dice_loss=0.72357, bce_loss=0.02332): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=55: Training (37 / 40 Steps) (dice_loss=0.67949, bce_loss=0.03895):  95%|█████████▌| 38/40 [00:44<00:02,  1.03s/it]
+Epoch=55: Training (39 / 40 Steps) (dice_loss=0.64686, bce_loss=0.05614): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=56: Training (37 / 40 Steps) (dice_loss=0.65590, bce_loss=0.01307):  95%|█████████▌| 38/40 [00:44<00:02,  1.07s/it]
+Epoch=56: Training (39 / 40 Steps) (dice_loss=0.71152, bce_loss=0.02024): 100%|██████████| 40/40 [00:46<00:00,  1.15s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=57: Training (38 / 40 Steps) (dice_loss=0.62660, bce_loss=0.01859):  98%|█████████▊| 39/40 [00:44<00:01,  1.05s/it]
+Epoch=57: Training (39 / 40 Steps) (dice_loss=0.71733, bce_loss=0.01341): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=58: Training (39 / 40 Steps) (dice_loss=0.67875, bce_loss=0.06700): 100%|██████████| 40/40 [00:45<00:00,  1.15it/s]
+Epoch=58: Training (39 / 40 Steps) (dice_loss=0.67875, bce_loss=0.06700): 100%|██████████| 40/40 [00:45<00:00,  1.15s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=59: Training (38 / 40 Steps) (dice_loss=0.85147, bce_loss=0.02733):  98%|█████████▊| 39/40 [00:45<00:01,  1.06s/it]
+Epoch=59: Training (39 / 40 Steps) (dice_loss=0.66169, bce_loss=0.01202): 100%|██████████| 40/40 [00:46<00:00,  1.16s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=60: Training (38 / 40 Steps) (dice_loss=0.75231, bce_loss=0.00741):  98%|█████████▊| 39/40 [00:45<00:01,  1.02s/it]
+Epoch=60: ave_dice_loss=0.77074, ave_bce_loss=0.02779
+Epoch=60: Training (39 / 40 Steps) (dice_loss=0.84394, bce_loss=0.01756): 100%|██████████| 40/40 [00:45<00:00,  1.15s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:02<00:00,  2.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=61: Training (38 / 40 Steps) (dice_loss=0.69989, bce_loss=0.05274):  98%|█████████▊| 39/40 [00:45<00:01,  1.09s/it]
+Epoch=61: Training (39 / 40 Steps) (dice_loss=0.99691, bce_loss=0.02475): 100%|██████████| 40/40 [00:46<00:00,  1.15s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=62: Training (37 / 40 Steps) (dice_loss=0.69969, bce_loss=0.04666):  95%|█████████▌| 38/40 [00:44<00:02,  1.02s/it]
+Epoch=62: Training (39 / 40 Steps) (dice_loss=0.90336, bce_loss=0.05042): 100%|██████████| 40/40 [00:46<00:00,  1.16s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=63: Training (38 / 40 Steps) (dice_loss=0.70802, bce_loss=0.01748):  98%|█████████▊| 39/40 [00:46<00:01,  1.06s/it]
+Epoch=63: Training (39 / 40 Steps) (dice_loss=0.68709, bce_loss=0.01184): 100%|██████████| 40/40 [00:46<00:00,  1.17s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=64: Training (39 / 40 Steps) (dice_loss=0.77185, bce_loss=0.04097): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/40 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=65: Training (38 / 40 Steps) (dice_loss=0.69614, bce_loss=0.01442):  98%|█████████▊| 39/40 [00:46<00:01,  1.03s/it]
+Epoch=65: Training (39 / 40 Steps) (dice_loss=0.72616, bce_loss=0.01147): 100%|██████████| 40/40 [00:46<00:00,  1.17s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=66: Training (39 / 40 Steps) (dice_loss=0.66829, bce_loss=0.01640): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/40 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=67: Training (37 / 40 Steps) (dice_loss=0.74479, bce_loss=0.05612):  95%|█████████▌| 38/40 [00:43<00:02,  1.04s/it]
+Epoch=67: Training (39 / 40 Steps) (dice_loss=0.56389, bce_loss=0.04488): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=68: Training (38 / 40 Steps) (dice_loss=0.75347, bce_loss=0.02033):  98%|█████████▊| 39/40 [00:44<00:01,  1.02s/it]
+Epoch=68: Training (39 / 40 Steps) (dice_loss=0.68671, bce_loss=0.01638): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=69: Training (37 / 40 Steps) (dice_loss=0.70393, bce_loss=0.05208):  95%|█████████▌| 38/40 [00:43<00:02,  1.02s/it]
+Epoch=69: Training (39 / 40 Steps) (dice_loss=0.74111, bce_loss=0.08013): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=70: Training (37 / 40 Steps) (dice_loss=0.70842, bce_loss=0.00970):  95%|█████████▌| 38/40 [00:44<00:02,  1.04s/it]
+Epoch=70: Training (39 / 40 Steps) (dice_loss=0.76729, bce_loss=0.00720): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+['20_pedbrain/100p_train/labels/BraTS-PED-00002-000'] torch.Size([1, 1, 160, 160, 104])
+100%|██████████| 1/1 [00:02<00:00,  2.00s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=71: Training (38 / 40 Steps) (dice_loss=0.85444, bce_loss=0.00744):  98%|█████████▊| 39/40 [00:44<00:01,  1.03s/it]
+Epoch=71: Training (39 / 40 Steps) (dice_loss=0.67063, bce_loss=0.02889): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=72: Training (36 / 40 Steps) (dice_loss=0.64687, bce_loss=0.01403):  92%|█████████▎| 37/40 [00:42<00:03,  1.03s/it]
+Epoch=72: Training (39 / 40 Steps) (dice_loss=0.99974, bce_loss=0.02765): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=73: Training (37 / 40 Steps) (dice_loss=0.66554, bce_loss=0.03790):  95%|█████████▌| 38/40 [00:43<00:02,  1.02s/it]
+Epoch=73: Training (39 / 40 Steps) (dice_loss=0.64799, bce_loss=0.06433): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=74: Training (38 / 40 Steps) (dice_loss=0.75367, bce_loss=0.04958):  98%|█████████▊| 39/40 [00:45<00:01,  1.05s/it]
+Epoch=74: Training (39 / 40 Steps) (dice_loss=0.63745, bce_loss=0.01967): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=75: Training (37 / 40 Steps) (dice_loss=0.74994, bce_loss=0.09093):  95%|█████████▌| 38/40 [00:43<00:02,  1.02s/it]
+Epoch=75: Training (39 / 40 Steps) (dice_loss=0.69347, bce_loss=0.17271): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=76: Training (37 / 40 Steps) (dice_loss=0.83363, bce_loss=0.13914):  95%|█████████▌| 38/40 [00:43<00:02,  1.04s/it]
+Epoch=76: Training (39 / 40 Steps) (dice_loss=0.63715, bce_loss=0.02970): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=77: Training (38 / 40 Steps) (dice_loss=0.81202, bce_loss=0.06056):  98%|█████████▊| 39/40 [00:44<00:01,  1.03s/it]
+Epoch=77: Training (39 / 40 Steps) (dice_loss=0.66641, bce_loss=0.08577): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=78: Training (38 / 40 Steps) (dice_loss=0.82084, bce_loss=0.22211):  98%|█████████▊| 39/40 [00:45<00:01,  1.02s/it]
+Epoch=78: Training (39 / 40 Steps) (dice_loss=0.65177, bce_loss=0.01627): 100%|██████████| 40/40 [00:45<00:00,  1.15s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=79: Training (39 / 40 Steps) (dice_loss=0.65225, bce_loss=0.01614): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/40 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=80: Training (39 / 40 Steps) (dice_loss=0.65251, bce_loss=0.05562): 100%|██████████| 40/40 [00:46<00:00,  1.16s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]
+Epoch=80: ave_dice_loss=0.70118, ave_bce_loss=0.05437
+
+100%|██████████| 1/1 [00:02<00:00,  2.04s/it]
+Task20| NC Brain: 0.0000, ED Brain: 0.0000, ET Brain: 0.0000,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=81: Training (37 / 40 Steps) (dice_loss=0.51681, bce_loss=0.02311):  95%|█████████▌| 38/40 [00:43<00:02,  1.04s/it]
+Epoch=81: Training (39 / 40 Steps) (dice_loss=0.85730, bce_loss=0.03400): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=82: Training (39 / 40 Steps) (dice_loss=0.93185, bce_loss=0.13882): 100%|██████████| 40/40 [00:46<00:00,  1.15s/it]
+Training (X / X Steps) (loss=X.X):   0%|          | 0/40 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=83: Training (37 / 40 Steps) (dice_loss=0.57069, bce_loss=0.04110):  95%|█████████▌| 38/40 [00:43<00:02,  1.03s/it]
+Epoch=83: Training (39 / 40 Steps) (dice_loss=0.95726, bce_loss=0.20298): 100%|██████████| 40/40 [00:45<00:00,  1.14s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=84: Training (37 / 40 Steps) (dice_loss=0.42667, bce_loss=0.02519):  95%|█████████▌| 38/40 [00:44<00:02,  1.01s/it]
+Epoch=84: Training (39 / 40 Steps) (dice_loss=0.51180, bce_loss=0.05631): 100%|██████████| 40/40 [00:46<00:00,  1.16s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=85: Training (38 / 40 Steps) (dice_loss=0.43870, bce_loss=0.00324):  98%|█████████▊| 39/40 [00:44<00:01,  1.02s/it]
+Epoch=85: Training (39 / 40 Steps) (dice_loss=0.99965, bce_loss=0.20667): 100%|██████████| 40/40 [00:45<00:00,  1.13s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=86: Training (37 / 40 Steps) (dice_loss=0.97057, bce_loss=0.09668):  95%|█████████▌| 38/40 [00:44<00:02,  1.04s/it]
+Epoch=86: Training (39 / 40 Steps) (dice_loss=0.58864, bce_loss=0.05616): 100%|██████████| 40/40 [00:46<00:00,  1.16s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch=87: Training (37 / 40 Steps) (dice_loss=0.95192, bce_loss=0.13130):  95%|█████████▌| 38/40 [00:46<00:02,  1.07s/it]
+Epoch=87: Training (39 / 40 Steps) (dice_loss=0.60913, bce_loss=0.01784): 100%|██████████| 40/40 [00:48<00:00,  1.21s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+

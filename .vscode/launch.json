@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "train.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--data_root_path", "../../data/",
+                "--num_workers", "8",
+                "--device", "0",
+                "--uniform_sample",
+                "--backbone", "swinunetr",
+                "--dataset_list", "PAOT_BRAIN",
+                "--batch_size", "2",
+                "--num_samples", "1",
+                "--local_rank", "0",
+                "--log_name", "testing-swinutr",
+                "--datasetkey", "20",
+                "--phase", "train",
+                "--pretrain", "./pretrained_weights/swinunetr.pth",
+                "--save_epoch_freq", "1",
+                "--max_epoch", "200",
+                "--word_embedding", "./pretrained_weights/txt_encoding.pth",
+                // "--pretrain", "./pretrained_weights/unet.pth",
+                // "--report_wandb"
+            ]
+        }
+    ]
+}

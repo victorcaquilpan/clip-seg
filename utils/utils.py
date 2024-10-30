@@ -32,9 +32,7 @@ from monai.utils import (
 from monai.data import decollate_batch
 from monai.transforms import Invertd, SaveImaged
 
-NUM_CLASS = 32
-
-
+NUM_CLASS = 35
 
 TEMPLATE={
     '01': [1,2,3,4,5,6,7,8,9,10,11,12,13,14],
@@ -56,15 +54,17 @@ TEMPLATE={
     '10_08': [15, 29], # post process
     '10_09': [1],
     '10_10': [31],
-    '15': [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17] ## total segmentation
+    '15': [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17], ## total segmentation
+    '20':[33,34,35]
 }
+
 
 ORGAN_NAME = ['Spleen', 'Right Kidney', 'Left Kidney', 'Gall Bladder', 'Esophagus', 
                 'Liver', 'Stomach', 'Aorta', 'Postcava', 'Portal Vein and Splenic Vein',
                 'Pancreas', 'Right Adrenal Gland', 'Left Adrenal Gland', 'Duodenum', 'Hepatic Vessel',
                 'Right Lung', 'Left Lung', 'Colon', 'Intestine', 'Rectum', 
                 'Bladder', 'Prostate', 'Left Head of Femur', 'Right Head of Femur', 'Celiac Truck',
-                'Kidney Tumor', 'Liver Tumor', 'Pancreas Tumor', 'Hepatic Vessel Tumor', 'Lung Tumor', 'Colon Tumor', 'Kidney Cyst']
+                'Kidney Tumor', 'Liver Tumor', 'Pancreas Tumor', 'Hepatic Vessel Tumor', 'Lung Tumor', 'Colon Tumor', 'Kidney Cyst', 'NC Brain', 'ED Brain', 'ET Brain']
 
 ## mapping to original setting
 MERGE_MAPPING_v1 = {
@@ -86,6 +86,7 @@ MERGE_MAPPING_v1 = {
     '12': [(2,4), (3,4), (21,2), (6,1), (16,3), (17,3)],  
     '13': [(1,3), (2,2), (3,2), (4,8), (5,9), (6,1), (7,7), (8,5), (9,6), (11,4), (12,10), (13,11), (25,12)],
     '15': [(1,1), (2,2), (3,3), (4,4), (5,5), (6,6), (7,7), (8,8), (9,9), (10,10), (11,11), (12,12), (13,13), (14,14), (16,16), (17,17), (18,18)],
+    '20':[(33,33), (34,34), (35,35)]
 }
 
 ## split left and right organ more than dataset defined
@@ -109,6 +110,7 @@ MERGE_MAPPING_v2 = {
     '12': [(2,4), (3,5), (21,2), (6,1), (16,3), (17,6)],  
     '13': [(1,3), (2,2), (3,13), (4,8), (5,9), (6,1), (7,7), (8,5), (9,6), (11,4), (12,10), (13,11), (25,12)],
     '15': [(1,1), (2,2), (3,3), (4,4), (5,5), (6,6), (7,7), (8,8), (9,9), (10,10), (11,11), (12,12), (13,13), (14,14), (16,16), (17,17), (18,18)],
+    '20':[(33,33), (34,34), (35,35)]
 }
 
 THRESHOLD_DIC = {
@@ -143,7 +145,10 @@ THRESHOLD_DIC = {
     'Hepatic Vessel Tumor': 0.5, 
     'Lung Tumor': 0.5, 
     'Colon Tumor': 0.5, 
-    'Kidney Cyst': 0.5
+    'Kidney Cyst': 0.5,
+    'NC Brain':0.5,
+    'ED Brain': 0.5, 
+    'ET Brain': 0.5
 }
 
 TUMOR_SIZE = {
@@ -646,7 +651,7 @@ def visualize_label(batch, save_dir, input_transform):
                 resample=False
         ),
     ])
-    
+#    batch_dict = [{"image": i} for i in decollate_batch(batch)]
     batch = [post_transforms(i) for i in decollate_batch(batch)]
 
 def save_results(batch, save_dir, input_transform, organ_list):
